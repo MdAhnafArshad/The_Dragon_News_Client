@@ -5,6 +5,7 @@ import NewsCart from '../NewsCard/NewsCart';
 const Category = () => {
     const {id} = useParams();
     const categoryNews = useLoaderData();
+    
     return (
         <div>
             {

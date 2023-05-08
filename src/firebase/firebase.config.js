@@ -10,7 +10,7 @@ const firebaseConfig = {
   projectId: "the-dragon-news-10",
   storageBucket: "the-dragon-news-10.appspot.com",
   messagingSenderId: "1073302964110",
-  appId: "1:1073302964110:web:9922e84c1e8cd86d5446df"
+  appId: "1:1073302964110:web:9922e84c1e8cd86d5446df",
 };
 
 // Initialize Firebase

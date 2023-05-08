@@ -1,6 +1,6 @@
 import moment from 'moment';
 import React from 'react';
-import { Card, Col, Image } from 'react-bootstrap';
+import { Card, Image } from 'react-bootstrap';
 import { FaEye, FaRegBookmark, FaRegStar, FaShareAlt, FaStar } from 'react-icons/fa';
 import Rating from 'react-rating';
 import { Link } from 'react-router-dom';
@@ -29,7 +29,7 @@ const NewsCart = ({ news }) => {
                     <Card.Img variant="top" src={image_url} />
                     <Card.Text>
                         {
-                            details.length < 250 ? <>{details}</> : <>{details.slice(0, 250)}...<Link to={`/news/:${_id}`}>read more</Link></>
+                            details.length < 250 ? <>{details}</> : <>{details.slice(0, 250)}...<Link to={`/news/${_id}`}>read more</Link></>
                         }
                     </Card.Text>
                 </Card.Body>
