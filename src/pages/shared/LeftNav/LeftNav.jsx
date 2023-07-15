@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
-import { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const LeftNav = () => {
 
     const [categories, setCategories] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/categories')
+        fetch('https://the-dragon-news-server-six-teal.vercel.app/categories')
             .then(data => data.json(data))
             .then(res => setCategories(res))
             .catch(err => console.error(err))
